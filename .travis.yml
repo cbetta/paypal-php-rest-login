@@ -6,6 +6,7 @@ before_script:
   - "sh -e /etc/init.d/xvfb start"
   - "wget http://selenium-release.storage.googleapis.com/2.42/selenium-server-standalone-2.42.1.jar"
   - php -S 127.0.0.1:9292 &
+  - sleep 30
 script:
   - "java -jar selenium-server-standalone-2.42.1.jar -htmlSuite *firefox http://127.0.0.1:8000/ /home/travis/build/cbetta/paypal-php-rest-login/tests/suite.html ./result"
   - "php -r 'echo strip_tags(file_get_contents(\"result\"));'"
