@@ -24,3 +24,11 @@ This demo uses
   * Password: `test1234`
 * Complete the instructions
 * You will receive a message that says __"Hi Hiro Protagonist"__
+
+## Running the test
+
+* Requirements:
+  * [Firefox](http://getfirefox.com) with the [Selenium IDE](http://seleniumhq.org/projects/ide/plugins.html)
+  * PHP 5.4
+* Start the app by running `php -S 127.0.0.1:9292`
+* Load the [test script](tests/login.html) in the Selenium IDE and run the script
