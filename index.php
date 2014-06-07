@@ -8,7 +8,7 @@ require_once 'bootstrap.php';
     <title>Login</title>
   </head>
   <body>
-    <?php if($_SESSION['name']) { ?>
+    <?php if(array_key_exists('name', $_SESSION) && $_SESSION['name']) { ?>
       Hi <?php echo $_SESSION['name'] ?> <br>
       <a href="/logout.php">Logout</a>
     <?php } else { ?>
