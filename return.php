@@ -1,8 +1,8 @@
 <?php
 require_once 'bootstrap.php';
 
-use PayPal\Auth\OpenID\PPOpenIdTokeninfo;
-use PayPal\Auth\OpenID\PPOpenIdUserinfo;
+use PayPal\Auth\Openid\PPOpenIdTokeninfo;
+use PayPal\Auth\Openid\PPOpenIdUserinfo;
 
 $token = PPOpenIdTokeninfo::createFromAuthorizationCode(
   array(
